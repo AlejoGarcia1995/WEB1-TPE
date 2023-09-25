@@ -1,0 +1,347 @@
+/* Estilos para la barra de navegación en pantallas chicas */
+
+@media only screen and (max-width: 767px) {
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2%;
+    background: #000000 url("/img/fondoHeader.jpg") no-repeat center/cover;
+    color: white;
+  }
+  
+  .cuerpo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2%;
+    margin-bottom: 32vw;
+  }
+  
+  /* Estilos para el pie de página */
+  
+  footer {
+    position:fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    padding: 2%;
+    text-align: center;
+  }
+
+  .piePag,
+  li {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  #logo {
+    max-width: 25vw;
+  }
+  
+  .menuItems{
+    background-color: rgba(52, 158, 215, 0.5);
+    position:absolute;
+    padding: 1%;
+    margin: 0%;
+  }
+
+  .menuUl{
+    padding: 0%;
+  }
+  
+  .btnNav{
+    display: grid;
+    align-content: stretch;
+    justify-content: start;
+    background-color:rgb(52, 158, 215, 0.5) ;
+    }
+
+/*Tabla talles*/
+ 
+  .contTabla{
+    flex-wrap: wrap;
+  }
+
+}
+
+/* Estilos para la barra de navegación en pantallas grandes */
+
+@media only screen and (min-width: 767px) {
+
+  /* Estilos del encabezado */
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1%;
+    background: url("/img/fondoHeader.jpg") #000000 no-repeat center/cover;
+    color: white;
+    }
+
+  .logo {
+    text-decoration: none;
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #logo {
+    max-width: 10vw;
+  }
+
+  .icono-menu {
+    color: #fdf8f8;
+    display: inline-block;
+    cursor: pointer;
+    font-size: 6.5vw;
+    margin-right: 1%;
+  }
+
+  .menu{
+    display: flex;
+    justify-content: space-around;
+    background-color: #555;
+  }
+
+  .btn_menu {
+    cursor: pointer;
+    visibility: hidden;
+  }
+
+  .menuItems {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .contBarra {
+    display: flex;
+    justify-content: center;
+  }
+
+  .navegacion {
+    display: flex;
+  }
+
+  .btnNav {
+    margin: 0 1%;
+  }
+
+  .btnNav a {
+    text-decoration: none;
+    color: white;
+  }
+
+  /* Estilos del cuerpo */
+
+  .cuerpo { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1%;
+  }
+  
+  /* Estilos para el pie de página */
+
+  footer {
+    display: flex;
+    flex-direction: column-reverse;
+    background-color: #333;
+    color: white;
+    padding: 1%;
+    text-align: center;
+    min-width: 100%;
+  }
+
+  .piePag,
+  li {
+    display: flex;
+    justify-content: space-around
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+ 
+  /*Tabla talles*/
+ 
+  .contTabla{
+    flex-wrap: nowrap;
+  }
+
+}
+
+/* Estilos generales */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: rgb(191, 204, 217);
+  overflow: auto;
+}
+
+/* Estilos del cuerpo */
+
+.promo {
+  max-width: 100%;
+}
+
+.itemProductos {
+  display: flex;
+  justify-content: center;
+  margin-top: 2%;
+}
+
+.item {
+  width: 95%;
+  margin: 0 1%;
+}
+
+.contTabla {
+  display: flex;
+  justify-content: center;
+  margin-top: 2%;
+}
+
+.tablas {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.tablas
+.tablas .tdTabla,
+.bodyTabla {
+  border: 1px solid #060303;
+  padding: 2%;
+  text-align: center;
+}
+
+.tablas th {
+  background-color: #e6cbcb;
+}
+
+.tablaTH {
+  margin-right: 2%;
+}
+
+.tablaTM {
+  margin-left: 2%;
+}
+
+.titulo {
+  font-size: 2vw;
+  font-weight: bold;
+}
+
+/* Estilos para el formulario */
+
+.cuerpo .form {
+  width: 100%;
+  max-width: 25vw;
+}
+
+.caja {
+  width: 100%;
+  padding: 2%;
+  margin-bottom: 2%;
+}
+
+.cuerpo .direccionDiv {
+  display: inline-grid;
+}
+
+.cuerpo .capchat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2%;
+}
+
+.cuerpo .entrada {
+  width: 25%;
+  padding: 2%;  
+}
+
+.cuerpo .boton {
+  display: flex;
+  justify-content: center;
+}
+
+.cuerpo button {
+  padding: 2% 4%;
+  margin: 2%;
+}
+
+.cuerpo .posCapchat {
+  display: contents;
+}
+
+/* Estilos para los productos */
+
+.contProducto {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2%;
+}
+
+.contenedorP {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.producto {
+  width: 95%;
+  height: auto;
+  margin-bottom: 2%;
+}
+
+.infoProducto {
+  width: 100%;
+  text-align: center;
+  background: beige;
+  font-family: fantasy;
+}
+
+.detalle {
+  width: 25%;
+  text-align: center;
+}
+
+.detalle p {
+  margin: 2% 0;
+}
+
+.caja {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*Tabla usuarios*/
+
+td, tr {
+  border: 1px solid #060303;
+  padding: 0.8vw;
+}
+
+table {
+  width: 100%;
+  margin-bottom: 2%;
+}
+
+.tablaUsuarios{
+  display:flex ;
+  justify-content: space-evenly;
+}
